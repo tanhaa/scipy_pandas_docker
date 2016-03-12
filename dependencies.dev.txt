@@ -1,0 +1,10 @@
+watchdog==0.8.3
+
+pytest==2.7.2
+pytest-cover==3.0.0
+pytest-xdist==1.12
+pytest-spec==0.2.24
+pytest-mock==0.7.0
+
+scipy==0.16.1
+scikit-learn==0.16.1
