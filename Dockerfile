@@ -45,7 +45,10 @@ RUN yum clean all && \
     libmad-devel
 
 RUN npm cache clean
-RUN npm install npm -g
+# RUN npm install npm -g
+RUN cd $(npm root -g)/npm \
+ && npm install fs-extra \
+ && sed -i -e s/graceful-fs/fs-extra/ -e s/fs\.rename/fs.move/ ./lib/utils/rename.js
 RUN npm install gulp -g
 
 # Install pip for python3
