@@ -41,7 +41,8 @@ RUN yum clean all && \
     gd-devel \
     boost-devel \
     unzip \
-    wget
+    wget \
+    libmad-devel
 
 RUN npm install npm -g
 RUN npm install gulp -g
