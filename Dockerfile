@@ -44,6 +44,7 @@ RUN yum clean all && \
     wget \
     libmad-devel
 
+RUN npm cache clean
 RUN npm install npm -g
 RUN npm install gulp -g
 
