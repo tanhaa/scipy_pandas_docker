@@ -42,7 +42,7 @@ RUN yum clean all && \
     boost-devel \
     unzip \
     wget \
-    libmad-devel
+    libid3tag-devel
 
 RUN npm cache clean
 # RUN npm install npm -g
